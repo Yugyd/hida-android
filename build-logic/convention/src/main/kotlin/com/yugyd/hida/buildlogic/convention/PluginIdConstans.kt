@@ -14,21 +14,9 @@
  *    limitations under the License.
  */
 
-import com.android.build.api.dsl.ApplicationExtension
-import com.yugyd.hida.buildlogic.convention.ANDROID_APPLICATION_PLUGIN_ID
-import com.yugyd.hida.buildlogic.convention.configureCompose
-import org.gradle.api.Plugin
-import org.gradle.api.Project
-import org.gradle.kotlin.dsl.getByType
+package com.yugyd.hida.buildlogic.convention
 
-class ComposeAndroidApplicationConventionPlugin : Plugin<Project> {
-
-    override fun apply(target: Project) {
-        with(target) {
-            pluginManager.apply(ANDROID_APPLICATION_PLUGIN_ID)
-
-            val extension = extensions.getByType<ApplicationExtension>()
-            configureCompose(extension)
-        }
-    }
-}
+internal const val KOTLIN_ANDROID_PLUGIN_ID = "org.jetbrains.kotlin.android"
+internal const val ANDROID_APPLICATION_PLUGIN_ID = "com.android.application"
+internal const val ANDROID_LIBRARY_PLUGIN_ID = "com.android.library"
+internal const val ANDROID_CACHE_FIX_PLUGIN_ID = "org.gradle.android.cache-fix"

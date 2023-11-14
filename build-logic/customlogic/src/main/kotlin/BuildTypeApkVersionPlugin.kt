@@ -20,9 +20,9 @@ import com.android.build.api.variant.ApplicationVariant
 import com.android.build.api.variant.VariantOutput
 import com.android.build.api.variant.VariantOutputConfiguration.OutputType
 import com.android.build.gradle.AppPlugin
-import com.yugyd.quiz.buildlogic.customlogic.tasks.VerifyManifestTask
-import com.yugyd.quiz.buildlogic.customlogic.tasks.VersionCodeTask
-import com.yugyd.quiz.buildlogic.customlogic.tasks.VersionNameTask
+import com.yugyd.hida.buildlogic.customlogic.tasks.VerifyManifestTask
+import com.yugyd.hida.buildlogic.customlogic.tasks.VersionCodeTask
+import com.yugyd.hida.buildlogic.customlogic.tasks.VersionNameTask
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.api.tasks.TaskProvider

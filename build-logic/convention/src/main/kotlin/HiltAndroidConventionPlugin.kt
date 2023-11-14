@@ -14,9 +14,9 @@
  *    limitations under the License.
  */
 
-import com.yugyd.quiz.buildlogic.convention.IMPLEMENTATION
-import com.yugyd.quiz.buildlogic.convention.KSP
-import com.yugyd.quiz.buildlogic.convention.libs
+import com.yugyd.hida.buildlogic.convention.IMPLEMENTATION
+import com.yugyd.hida.buildlogic.convention.KSP
+import com.yugyd.hida.buildlogic.convention.libs
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.dependencies

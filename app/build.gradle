@@ -1,6 +1,6 @@
 plugins {
-    id 'quiz.android.application'
-    id 'quiz.android.buildtype.apk.version'
+    id 'hida.android.application'
+    id 'hida.android.buildtype.apk.version'
 }
 
 android {

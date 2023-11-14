@@ -48,10 +48,9 @@ buildCache {
     }
 }
 
-rootProject.name = "idiomic-android-gradle"
+rootProject.name = "hida-android"
 // Configuration
 include 'app'
-include 'sample-app'
 // Base
 include ':product:main:main'
 include ':product:main:main-api'

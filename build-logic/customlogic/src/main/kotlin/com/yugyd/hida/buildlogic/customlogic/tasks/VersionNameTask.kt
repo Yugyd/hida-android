@@ -14,21 +14,21 @@
  *    limitations under the License.
  */
 
-import com.android.build.api.dsl.ApplicationExtension
-import com.yugyd.hida.buildlogic.convention.ANDROID_APPLICATION_PLUGIN_ID
-import com.yugyd.hida.buildlogic.convention.configureCompose
-import org.gradle.api.Plugin
-import org.gradle.api.Project
-import org.gradle.kotlin.dsl.getByType
+package com.yugyd.hida.buildlogic.customlogic.tasks
 
-class ComposeAndroidApplicationConventionPlugin : Plugin<Project> {
+import com.yugyd.hida.buildlogic.customlogic.VERSION_NAME
+import org.gradle.api.DefaultTask
+import org.gradle.api.file.RegularFileProperty
+import org.gradle.api.tasks.OutputFile
+import org.gradle.api.tasks.TaskAction
 
-    override fun apply(target: Project) {
-        with(target) {
-            pluginManager.apply(ANDROID_APPLICATION_PLUGIN_ID)
+abstract class VersionNameTask : DefaultTask() {
 
-            val extension = extensions.getByType<ApplicationExtension>()
-            configureCompose(extension)
-        }
+    @get:OutputFile
+    abstract val outputFile: RegularFileProperty
+
+    @TaskAction
+    fun action() {
+        outputFile.get().asFile.writeText(VERSION_NAME)
     }
 }

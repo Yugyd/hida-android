@@ -15,8 +15,8 @@
  */
 
 import com.android.build.gradle.LibraryExtension
-import com.yugyd.quiz.buildlogic.convention.ANDROID_LIBRARY_PLUGIN_ID
-import com.yugyd.quiz.buildlogic.convention.configureCompose
+import com.yugyd.hida.buildlogic.convention.ANDROID_LIBRARY_PLUGIN_ID
+import com.yugyd.hida.buildlogic.convention.configureCompose
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.getByType

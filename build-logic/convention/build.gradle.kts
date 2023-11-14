@@ -26,27 +26,27 @@ dependencies {
 gradlePlugin {
     plugins {
         register("androidApplication") {
-            id = "quiz.android.application"
+            id = "hida.android.application"
             implementationClass = "AndroidApplicationConventionPlugin"
         }
         register("androidLibrary") {
-            id = "quiz.android.library"
+            id = "hida.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
         register("composeAndroidApplication") {
-            id = "quiz.android.compose.application"
+            id = "hida.android.compose.application"
             implementationClass = "ComposeAndroidApplicationConventionPlugin"
         }
         register("composeAndroidLibrary") {
-            id = "quiz.android.compose.library"
+            id = "hida.android.compose.library"
             implementationClass = "ComposeAndroidLibraryConventionPlugin"
         }
         register("hiltAndroid") {
-            id = "quiz.android.hilt"
+            id = "hida.android.hilt"
             implementationClass = "HiltAndroidConventionPlugin"
         }
         register("dependencyUpdates") {
-            id = "quiz.dependency.updates"
+            id = "hida.dependency.updates"
             implementationClass = "DependencyUpdatesPlugin"
         }
     }

@@ -25,7 +25,7 @@ dependencies {
 gradlePlugin {
     plugins {
         register("buildTypeApkVersion") {
-            id = "quiz.android.buildtype.apk.version"
+            id = "hida.android.buildtype.apk.version"
             implementationClass = "BuildTypeApkVersionPlugin"
         }
     }

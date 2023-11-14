@@ -16,14 +16,14 @@
 
 import com.android.build.api.variant.LibraryAndroidComponentsExtension
 import com.android.build.gradle.LibraryExtension
-import com.yugyd.quiz.buildlogic.convention.ANDROID_CACHE_FIX_PLUGIN_ID
-import com.yugyd.quiz.buildlogic.convention.ANDROID_LIBRARY_PLUGIN_ID
-import com.yugyd.quiz.buildlogic.convention.KOTLIN_ANDROID_PLUGIN_ID
-import com.yugyd.quiz.buildlogic.convention.TARGET_SDK
-import com.yugyd.quiz.buildlogic.convention.configureAndroid
-import com.yugyd.quiz.buildlogic.convention.configureBuildTypes
-import com.yugyd.quiz.buildlogic.convention.configureKotlin
-import com.yugyd.quiz.buildlogic.convention.configureLint
+import com.yugyd.hida.buildlogic.convention.ANDROID_CACHE_FIX_PLUGIN_ID
+import com.yugyd.hida.buildlogic.convention.ANDROID_LIBRARY_PLUGIN_ID
+import com.yugyd.hida.buildlogic.convention.KOTLIN_ANDROID_PLUGIN_ID
+import com.yugyd.hida.buildlogic.convention.TARGET_SDK
+import com.yugyd.hida.buildlogic.convention.configureAndroid
+import com.yugyd.hida.buildlogic.convention.configureBuildTypes
+import com.yugyd.hida.buildlogic.convention.configureKotlin
+import com.yugyd.hida.buildlogic.convention.configureLint
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure

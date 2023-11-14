@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.android.cache.fix) apply false
     alias(libs.plugins.update.versions) apply false
     alias(libs.plugins.hilt) apply false
-    id "quiz.dependency.updates"
+    id "hida.dependency.updates"
 }
 
 tasks.register('clean', Delete) {
