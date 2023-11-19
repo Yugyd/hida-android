@@ -7,11 +7,13 @@ appcompat = '1.6.1'
 material = '1.9.0'
 composeVersion = '2023.04.01'
 # https://developer.android.com/jetpack/androidx/releases/compose-kotlin#pre-release_kotlin_compatibility
-kotlinCompilerExtensionVersion = '1.4.5'
+kotlinCompilerExtensionVersion = '1.4.8'
 versionsUpdates = '0.47.0'
 hiltVersion = '2.44'
 kspVersion = '1.8.22-1.0.11'
 navigationVersion = '2.7.0'
+# Threading
+coroutines-version = '1.7.0'
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
@@ -65,8 +67,13 @@ compose-viewmodel = { module = 'androidx.lifecycle:lifecycle-viewmodel-compose',
 compose-lifecycle = { module = 'androidx.lifecycle:lifecycle-runtime-compose', version = '2.6.0-beta01' }
 # Material
 material = { module = 'com.google.android.material:material', version.ref = 'material' }
+# DI
+compose-hilt-navigation = { module = 'androidx.hilt:hilt-navigation-compose', version = '1.1.0' }
 # Navigation
 navigation-fragment-ktx = { module = 'androidx.navigation:navigation-fragment-ktx', version.ref = 'navigationVersion' }
 navigation-ui-ktx = { module = 'androidx.navigation:navigation-ui-ktx', version.ref = 'navigationVersion' }
+compose-navigation = { module = 'androidx.navigation:navigation-compose', version.ref = 'navigationVersion' }
+# Threading
+kotlinx-coroutines = { module = 'org.jetbrains.kotlinx:kotlinx-coroutines-core', version.ref = 'coroutines-version' }
 # Timber
 timber = { module = 'com.jakewharton.timber:timber', version = '5.0.1' }

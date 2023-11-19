@@ -1,0 +1,15 @@
+plugins {
+    id 'hida.android.library'
+}
+
+android {
+    namespace 'com.yugyd.hida.domain.feature'
+}
+
+dependencies {
+    implementation(project(":product:core:coroutinesutils"))
+    implementation(project(":product:core:usecase"))
+
+    // Threading
+    implementation(libs.kotlinx.coroutines)
+}

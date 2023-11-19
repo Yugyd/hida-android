@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="uikit_msg_base_error">Ошибка, повторите действие</string>
+</resources>

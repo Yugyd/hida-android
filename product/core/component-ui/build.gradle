@@ -1,0 +1,18 @@
+plugins {
+    id 'hida.android.library'
+}
+
+android {
+    namespace 'com.yugyd.hida.core.componentui'
+}
+
+dependencies {
+    implementation(project(":product:core:logger"))
+    implementation(project(":product:core:coroutinesutils"))
+
+    // AndroidX
+    implementation(libs.lifecycle.viewmodel.ktx)
+
+    // Threading
+    implementation(libs.kotlinx.coroutines)
+}

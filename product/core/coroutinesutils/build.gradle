@@ -1,0 +1,12 @@
+plugins {
+    id 'hida.android.library'
+}
+
+android {
+    namespace 'com.yugyd.hida.core.coroutines'
+}
+
+dependencies {
+    // Threading
+    implementation(libs.kotlinx.coroutines)
+}

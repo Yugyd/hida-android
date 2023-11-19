@@ -1,0 +1,29 @@
+plugins {
+    id 'hida.android.library'
+    id 'hida.android.compose.library'
+}
+
+android {
+    namespace 'com.yugyd.hida.ui.feature'
+}
+
+dependencies {
+    implementation(project(":product:core:component-ui"))
+    implementation(project(":product:core:coroutinesutils"))
+    implementation(project(":product:core:logger"))
+    implementation(project(":product:core:usecase"))
+    implementation(project(":product:designsystem:core"))
+    implementation(project(":product:designsystem:toolbar"))
+    implementation(project(":product:designsystem:emptystate"))
+    implementation(project(":product:feature:feature-bl"))
+
+    // Compose
+    implementation platform(libs.compose.bom)
+    implementation libs.compose.material3
+    implementation libs.compose.hilt.navigation
+    implementation libs.compose.material3
+    implementation libs.compose.lifecycle
+
+    // Threading
+    implementation(libs.kotlinx.coroutines)
+}

@@ -1,0 +1,14 @@
+plugins {
+    id 'hida.android.library'
+    id 'hida.android.compose.library'
+}
+
+android {
+    namespace 'com.yugyd.hida.designsystem.toolbar'
+}
+
+dependencies {
+    // Compose
+    implementation platform(libs.compose.bom)
+    implementation libs.compose.material3
+}
