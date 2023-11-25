@@ -19,8 +19,9 @@ package com.yugyd.hida.domain.feature
 import com.yugyd.coroutines.utils.DispatchersProvider
 import com.yugyd.hida.core.usecase.UseCase
 import com.yugyd.hida.domain.feature.data.MvvmGoogleRepository
+import javax.inject.Inject
 
-class MvvmGoogleUseCase internal constructor(
+class MvvmGoogleUseCase internal @Inject constructor(
     private val repository: MvvmGoogleRepository,
     dispatchersProvider: DispatchersProvider,
 ) : UseCase<Unit, String>(dispatchersProvider) {

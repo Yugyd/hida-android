@@ -1,6 +1,8 @@
 plugins {
     id 'hida.android.application'
     id 'hida.android.buildtype.apk.version'
+    id 'hida.android.hilt'
+    id 'hida.android.compose.application'
 }
 
 android {
@@ -17,11 +19,18 @@ android {
 }
 
 dependencies {
+    implementation(project(":product:feature:feature-ui"))
+
     // UI
     implementation libs.appcompat
     implementation libs.core.ktx
     implementation libs.constraint.layout
     implementation libs.material
+
+    // UI: Compose
+    implementation platform(libs.compose.bom)
+    implementation libs.compose.activity
+    implementation libs.compose.material3
 
     // Lifecycle
     implementation libs.lifecycle.livedata.ktx

@@ -1,5 +1,6 @@
 plugins {
     id 'hida.android.library'
+    id 'hida.android.hilt'
 }
 
 android {

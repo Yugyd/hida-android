@@ -18,4 +18,4 @@ package com.yugyd.hida.buildlogic.convention
 
 internal const val DEBUG_IMPLEMENTATION = "debugImplementation"
 internal const val IMPLEMENTATION = "implementation"
-internal const val KSP = "ksp"
+internal const val KAPT = "kapt"

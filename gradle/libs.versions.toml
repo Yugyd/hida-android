@@ -27,7 +27,6 @@ android-cache-fix = { id = "org.gradle.android.cache-fix", version = "2.7.1" }
 update-versions = { id = "com.github.ben-manes.versions", version.ref = "versionsUpdates" }
 # DI
 hilt = { id = "com.google.dagger.hilt.android", version.ref = "hiltVersion" }
-hilt-plugin = { id = "dagger.hilt.android.plugin", version.ref = "hiltVersion" }
 # ksp
 ksp = { id = "com.google.devtools.ksp", version.ref = "kspVersion" }
 
@@ -68,7 +67,10 @@ compose-lifecycle = { module = 'androidx.lifecycle:lifecycle-runtime-compose', v
 # Material
 material = { module = 'com.google.android.material:material', version.ref = 'material' }
 # DI
-compose-hilt-navigation = { module = 'androidx.hilt:hilt-navigation-compose', version = '1.1.0' }
+hilt-android = { module = 'com.google.dagger:hilt-android', version.ref = 'hiltVersion' }
+hilt-dagger-compiler = { module = 'com.google.dagger:hilt-android-compiler', version.ref = 'hiltVersion' }
+hilt-navigation-compose = { module = 'androidx.hilt:hilt-navigation-compose', version = '1.1.0' }
+javax-inject = { module = 'javax.inject:javax.inject', version = '1' }
 # Navigation
 navigation-fragment-ktx = { module = 'androidx.navigation:navigation-fragment-ktx', version.ref = 'navigationVersion' }
 navigation-ui-ktx = { module = 'androidx.navigation:navigation-ui-ktx', version.ref = 'navigationVersion' }

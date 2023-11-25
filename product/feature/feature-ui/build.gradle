@@ -1,6 +1,7 @@
 plugins {
     id 'hida.android.library'
     id 'hida.android.compose.library'
+    id 'hida.android.hilt'
 }
 
 android {
@@ -20,9 +21,10 @@ dependencies {
     // Compose
     implementation platform(libs.compose.bom)
     implementation libs.compose.material3
-    implementation libs.compose.hilt.navigation
-    implementation libs.compose.material3
     implementation libs.compose.lifecycle
+
+    // DI
+    implementation libs.hilt.navigation.compose
 
     // Threading
     implementation(libs.kotlinx.coroutines)

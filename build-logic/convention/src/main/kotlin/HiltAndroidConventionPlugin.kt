@@ -15,22 +15,28 @@
  */
 
 import com.yugyd.hida.buildlogic.convention.IMPLEMENTATION
-import com.yugyd.hida.buildlogic.convention.KSP
+import com.yugyd.hida.buildlogic.convention.KAPT
 import com.yugyd.hida.buildlogic.convention.libs
+import dagger.hilt.android.plugin.HiltExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
+import org.gradle.kotlin.dsl.configure
 import org.gradle.kotlin.dsl.dependencies
 
 class HiltAndroidConventionPlugin : Plugin<Project> {
 
     override fun apply(target: Project) {
         with(target) {
-            pluginManager.apply(libs.findPlugin("hilt-plugin").get().toString())
-            pluginManager.apply(libs.findPlugin("ksp").get().toString())
+            pluginManager.apply("com.google.dagger.hilt.android")
+            pluginManager.apply("kotlin-kapt")
 
             dependencies {
                 add(IMPLEMENTATION, libs.findLibrary("hilt-android").get())
-                add(KSP, libs.findLibrary("hilt-dagger-compiler").get())
+                add(KAPT, libs.findLibrary("hilt-dagger-compiler").get())
+            }
+
+            project.extensions.configure<HiltExtension> {
+                enableAggregatingTask = true
             }
         }
     }

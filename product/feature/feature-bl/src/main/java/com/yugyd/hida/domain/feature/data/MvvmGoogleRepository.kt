@@ -16,6 +16,6 @@
 
 package com.yugyd.hida.domain.feature.data
 
-internal interface MvvmGoogleRepository {
+interface MvvmGoogleRepository {
     suspend fun getData(): String
 }

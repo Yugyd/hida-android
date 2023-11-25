@@ -36,7 +36,7 @@ class FeatureViewModel @Inject constructor(
                     processDataError(it)
                 }
                 .onSuccess {
-                    screenState = screenState.copy(data = it)
+                    processData(it)
                 }
         }
     }
@@ -44,16 +44,19 @@ class FeatureViewModel @Inject constructor(
     private fun processData(data: String) {
         screenState = screenState.copy(
             isLoading = false,
+            isWarning = false,
             data = data,
         )
     }
 
     private fun processDataError(error: Throwable) {
+        logger.log(error)
+
         screenState = screenState.copy(
             isLoading = false,
-            showErrorMessage = true,
+            isWarning = false,
+            data = "",
         )
-        logger.log(error)
     }
 
     override fun handleAction(action: Action) = when (action) {

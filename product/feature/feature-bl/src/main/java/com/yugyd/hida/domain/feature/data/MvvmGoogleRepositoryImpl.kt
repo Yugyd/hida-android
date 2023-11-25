@@ -16,6 +16,6 @@
 
 package com.yugyd.hida.domain.feature.data
 
-internal class MvvmGoogleRepositoryImpl() : MvvmGoogleRepository {
+internal class MvvmGoogleRepositoryImpl : MvvmGoogleRepository {
     override suspend fun getData() = "Foo"
 }
